@@ -13,8 +13,8 @@
 		
     </style>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization&sensor=false"></script>
-	<script type="text/javascript" src="waypoints.js"></script>
-	<!--<script type="text/javascript" src="all_waypoints.js"></script>-->
+	<!--<script type="text/javascript" src="waypoints.js"></script>-->
+	<script type="text/javascript" src="all_waypoints.js"></script>
     <script type="text/javascript" src="VesselTracking1.js"></script>
 	<link type="text/css" rel="stylesheet" href="stylesheet.css"></link>
 	<title>AIMS Vessel Tracking Heatmap</title>
@@ -67,11 +67,12 @@
 
 	<div id="map">
 		<div id="panel">
-			<button onclick="toggleHeatmap()">Toggle Heatmap</button>
-			<button onclick="changeGradient()">Change Gradient</button>
-			<button onclick="changeRadius()">Change Radius</button>
-			<button onclick="changeOpacity()">Change Opacity</button>
-
+			
+			<button id="hmToggle" onclick="toggleHeatmap()">Toggle Heatmap</button>
+			<button id="hmGrad" onclick="changeGradient()">Gradient Colour</button>
+			<button id="hmRad" onclick="changeRadius()">Change Radius</button>
+			<button id="hmOpa" onclick="changeOpacity()">Opacity</button>
+			
 		</div>
 		<div id="map-canvas">			
 		</div>
