@@ -41,6 +41,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	line-height: 1.42857;
+	background-color: #EEE;
 }
 
 div div a div img {
@@ -163,7 +164,48 @@ h1 {
         margin-left: -180px;
         z-index: 99;
         padding: 5px;
+		color: #333;
 		}
+		
+div div ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+		
+#hmToggle{
+		background-color: #F8F8F8;
+		border: 1px solid #FFFFFF;
+		text-align: center;
+		vertical-align: middle;
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+#hmGrad{
+		background-color: #F8F8F8;
+		border: 1px solid #FFFFFF;
+		text-align: center;
+		vertical-align: middle;
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+#hmRad{
+		background-color: #F8F8F8;
+		border: 1px solid #FFFFFF;
+		text-align: center;
+		vertical-align: middle;
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+#hmOpa{
+		background-color: #F8F8F8;
+		border: 1px solid #FFFFFF;
+		text-align: center;
+		vertical-align: middle;
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+div div button:hover{
+	color: #00C5DA;
+	box-shadow: 0px 2px 6px rgba (0, 0, 0, 1);
+}
 
 footer {
 	width: 100%;
