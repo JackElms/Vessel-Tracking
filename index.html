@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<style type="text/css">
+		html, body, #map-canvas {
+		height: 525px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		}
+		
+    </style>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization&sensor=false"></script>
+	<script type="text/javascript" src="waypoints.js"></script>
+	<!--<script type="text/javascript" src="all_waypoints.js"></script>-->
+    <script type="text/javascript" src="VesselTracking1.js"></script>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"></link>
+	<title>AIMS Vessel Tracking Heatmap</title>
+	</head>
+	<body>
+	<div class="Header">
+		<div class="Container">
+		<a href="/#/">
+			<img width="250" height="65" src="http://weather.aims.gov.au/assets/images/aims-logo-white.png"/></img>
+			<div class="HeaderRight">
+				<img width="51" height="35" src="http://weather.aims.gov.au/assets/images/aims-logo-sml.png"></img>
+				
+				AIMS DATA CENTRE
+				
+			</div>
+		</a>
+		</div>
+	</div>
+	
+	<header id="top" class="Navbar">
+		<div class="Container">
+			<nav class="collapse navbar-collapse bs-navbar-collapse no-transition">
+				<ul class="nav-links">
+					<li>
+						<a href="http://weather.aims.gov.au/#/overview">Weather Stations</a>
+					</li>
+					<li>
+						<a href="http://data.aims.gov.au/aimsrtds/webcams.xhtml">Web Cameras</a>
+					</li>
+					<li>
+						<a href="http://data.aims.gov.au/aimsrtds/yearlytrends.xhtml">Annual Trends</a>
+					</li>
+					<li>
+						<a href="http://data.aims.gov.au/aimsrtds/datatool.xhtml">Advanced Charts</a>
+					</li>
+					<li>
+						<a href="http://data.aims.gov.au/aimsrtds/coralbleaching.xhtml">Bleach Indicators</a>
+					</li>
+					<li>
+						<a href="http://data.aims.gov.au/heatmap/">Vessel Heatmap</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<h1>Vessel Tracking Heatmap</h1>
+	
+	
+
+	<div id="map">
+		<div id="panel">
+			<button onclick="toggleHeatmap()">Toggle Heatmap</button>
+			<button onclick="changeGradient()">Change Gradient</button>
+			<button onclick="changeRadius()">Change Radius</button>
+			<button onclick="changeOpacity()">Change Opacity</button>
+
+		</div>
+		<div id="map-canvas">			
+		</div>
+	</div>
+	<div>Note: Loading times may vary, depending on your browser and internet settings. Please be patient.</div>
+	<footer id="Bottom">
+		<div class="Container">
+			<p>&copy; 2015 Australian Institute of Marine Science
+				<a href="http://creativecommons.org/licenses/by/3.0/au/deed.en">
+				<img src="http://weather.aims.gov.au/assets/images/cc.png"></img>
+				</a>
+			</p>
+			<ul>
+				<li><a href="http://aims.gov.au/docs/cc-attribution.html">Attributing AIMS</a> | </li>
+				<li><a href="http://aims.gov.au/docs/cc-copyright.html">Copyright Notice</a> | </li>
+				<li><a href="http://aims.gov.au/docs/disclaimer.html">Disclaimer</a> | </li>
+				<li><a href="http://aims.gov.au/docs/privacy-policy.html">Privacy Policy</a></li>
+			</ul>
+		</div>
+	</footer>
+	
+	</body>
+</html>
