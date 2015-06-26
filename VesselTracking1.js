@@ -81,10 +81,10 @@ function initialize() {
 	// to the map type control.
 	var mapOptions = {
 		center : {
-			lat : -19,
+			lat : -21,
 			lng : 134
 		},
-		zoom : 5,
+		zoom : 4,
 		disableDefaultUI : true,
 		zoomControl : true,
 		scrollwheel : false,
@@ -110,7 +110,8 @@ function initialize() {
 
 	heatmap = new google.maps.visualization.HeatmapLayer({
 			data : pointArray,
-			maxIntensity : 40
+			maxIntensity : 40,
+			radius: 3
 		});
 
 	heatmap.setMap(map);
